@@ -66,7 +66,7 @@ export function Features() {
         </motion.div>
 
         {/* Bento — 12 col, dense */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-3 [grid-auto-flow:dense]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
           {FEATURES.map((f, i) => {
             const Icon = f.icon
             return (
@@ -77,8 +77,7 @@ export function Features() {
                 viewport={{ once: true, margin: '-60px' }}
                 transition={{ duration: 0.5, delay: i * 0.07 }}
                 whileHover={{ y: -2 }}
-                className={`grid-card p-8 flex flex-col gap-5 cursor-default group
-                  ${f.size === 'large' ? 'md:col-span-7 md:row-span-2' : 'md:col-span-5'}`}
+                className="grid-card p-8 flex flex-col gap-5 cursor-default group"
               >
                 <div className="flex items-start justify-between">
                   <div className="w-10 h-10 rounded border border-f-border flex items-center justify-center group-hover:border-f-border-blue transition-colors">

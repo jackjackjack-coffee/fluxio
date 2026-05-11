@@ -81,10 +81,10 @@ export function Hero() {
             </motion.div>
 
             {/* Mono display headline */}
-            <h1 ref={headRef} className="heading-mono text-[clamp(3.5rem,7vw,7.5rem)] text-f-text mb-8 overflow-hidden whitespace-pre-line">
+            <h1 ref={headRef} className="heading-mono text-[clamp(2.5rem,5vw,6rem)] text-f-text mb-8 overflow-hidden whitespace-pre-line">
               {'API INFRA\nFOR BUILDERS'.split('\n').map((line, li) => (
                 <div key={li} className="overflow-hidden">
-                  <div className="block">
+                  <div className="block whitespace-nowrap">
                     {line.split('').map((ch, ci) => (
                       <span key={ci} className="char inline-block">{ch === ' ' ? ' ' : ch}</span>
                     ))}
